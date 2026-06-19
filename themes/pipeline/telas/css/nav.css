@@ -1,0 +1,24 @@
+
+/* Navbar */
+.navbar{
+    padding:25px 0px;
+}
+
+.nav-link-pulso {
+    color: var(--marinho) !important;
+    font-weight: 600;
+    margin: 0 10px;
+    position: relative;
+}
+.nav-link-pulso:hover::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; width: 100%; height: 2px;
+    background-color: var(--turquesa);
+}
+
+/*cta no mobile*/
+.nav-item .bt-turquesa{
+    margin: 10px 0px;
+    display: block;
+}

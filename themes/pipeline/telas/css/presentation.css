@@ -1,0 +1,70 @@
+/* --- Cards Apresentação --- */
+.presentation-boxes {
+  margin-top: -80px; /* Invasão sobre a hero */
+  position: relative;
+  z-index: 20;
+  padding-bottom: 100px;
+}
+
+.card-apresentacao {
+  background: #ffffff;
+  padding: 50px 35px;
+  border-radius: 15px;
+  text-align: center;
+  height: 100%;
+  transition: transform 0.3s ease;
+  border-bottom: 5px solid #039ebd;
+}
+
+.card-apresentacao:hover {
+  transform: translateY(-10px);
+}
+
+.icon-presentation {
+  font-size: 4rem;
+  color: #039ebd;
+  display: block;
+}
+
+.card-apresentacao h4 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #04233f;
+}
+
+.text-presentation {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 0;
+}
+
+.text-presentation b, .text-presentation strong {
+  color: #04233f;
+  font-weight: 700;
+}
+
+/* --- Ajuste Mobile (Alinhado com o breakpoint LG do Bootstrap) --- */
+@media (max-width: 991px) {
+  .presentation-boxes {
+      margin-top: -100px; 
+      padding-bottom: 80px;
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+  
+  /* Garante que os cards não fiquem gigantescos em tablets largos */
+  .card-apresentacao {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 40px 25px;
+  }
+
+  .icon-presentation {
+      font-size: 3.2rem;
+  }
+  
+  .text-presentation {
+      font-size: 1.1rem;
+  }
+}

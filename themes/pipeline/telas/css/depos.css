@@ -1,0 +1,60 @@
+/* --- Seção Depoimentos GPE --- */
+.card-gpe {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  height: 100%;
+  border: 1px solid #eee;
+  transition: all 0.3s ease;
+}
+
+.card-gpe:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08) !important;
+}
+
+.avatar-cliente img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.estrelas-google {
+  color: #fbbc04; /* Amarelo padrão Google */
+  font-size: 0.85rem;
+}
+
+.google-icon-small {
+  width: 20px;
+  height: 20px;
+  opacity: 0.7;
+}
+
+.item-texto-depoimento {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  font-style: italic;
+  margin-bottom: 15px;
+  color: #444 !important;
+}
+
+.data-post {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* Ajuste do título para manter o padrão das outras seções */
+.section-title-ajuste {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+@media (max-width: 991px) {
+  .section-title-ajuste {
+    font-size: 2.2rem;
+  }
+  
+  .card-gpe {
+    margin-bottom: 10px;
+  }
+}

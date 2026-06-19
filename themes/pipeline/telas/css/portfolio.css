@@ -1,0 +1,62 @@
+/* --- Cards Portfólio --- */
+.card-portfolio {
+  background-color: #ffffff;
+  border-radius: 15px;
+  height: 100%;
+  transition: transform 0.3s ease;
+  border-bottom: 5px solid #039ebd;
+}
+
+.card-portfolio:hover {
+  transform: translateY(-5px);
+}
+
+.img-logo-portfolio {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+}
+
+.item-texto-portfolio {
+  font-size: 1.15rem;
+  line-height: 1.6;
+}
+
+/* Link interno do Card: Azul Marinho */
+.link-projeto-portfolio {
+  color: #04233f; /* Azul Marinho */
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.link-projeto-portfolio:hover {
+  text-decoration: underline;
+  color: #039ebd; /* Muda para turquesa no hover */
+}
+
+/* Link Geral da Seção: Turquesa */
+.link-todas-vitrines {
+  color: #039ebd; /* Turquesa */
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.link-todas-vitrines:hover {
+  color: #ffffff; /* Fica branco no hover para destacar no fundo marinho */
+  border-bottom: 2px solid #039ebd;
+}
+
+@media (max-width: 991px) {
+  .img-logo-portfolio {
+    height: 60px;
+  }
+  .item-texto-portfolio {
+    font-size: 1.05rem;
+  }
+}

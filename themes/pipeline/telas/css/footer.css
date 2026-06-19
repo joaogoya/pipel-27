@@ -1,0 +1,62 @@
+/* --- Footer Custom --- */
+.letter-spacing-1 {
+  letter-spacing: 1.5px;
+}
+
+.x-small {
+  font-size: 0.75rem;
+}
+
+/* Social Nav */
+.social-link {
+  color: #ffffff; /* Ícones brancos */
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  color: #039ebd; /* Fica turquesa no hover */
+  transform: translateY(-3px);
+}
+
+/* Blog Section */
+.blog-thumb {
+  object-fit: cover;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.hover-turquesa:hover {
+  color: #039ebd !important;
+  transition: 0.3s;
+}
+
+/* Botão Visite o Blog */
+.bt-turquesa-sm {
+  background-color: #039ebd;
+  color: #ffffff;
+  padding: 8px 20px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.bt-turquesa-sm:hover {
+  background-color: #ffffff;
+  color: #04233f;
+  transform: translateY(-2px);
+}
+
+/* Ajuste Opacidade Linha */
+.border-white {
+  opacity: 1 !important;
+}
+
+@media (max-width: 991px) {
+  .bt-turquesa-sm {
+    width: 100%;
+    text-center: center;
+    display: block;
+    text-align: center;
+  }
+}

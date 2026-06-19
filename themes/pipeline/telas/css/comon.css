@@ -1,0 +1,46 @@
+/* Cores do João */
+:root {
+    --turquesa: #039ebd;
+    --marinho: #04233f;
+    --branco: #ffffff;
+}
+
+/* Gerais */
+body { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+.azul-marinho { color: var(--marinho); }
+.text-turquesa { color: var(--turquesa); }
+.bg-marinho { background-color: var(--marinho); }
+.section-padding { padding: 100px 0; }
+
+/* Botões Customizados */
+.bt-turquesa {
+    background-color: var(--turquesa);
+    color: var(--branco);
+    padding: 12px 28px;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(3, 158, 189, 0.3);
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+}
+.bt-turquesa:hover {
+    background-color: var(--marinho);
+    color: var(--branco);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(3, 158, 189, 0.5);
+}
+
+.bt-azul {
+    background-color: var(--marinho);
+    color: var(--branco);
+    padding: 12px 28px;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(4, 35, 63, 0.3);
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+}
+.bt-azul:hover {
+    filter: brightness(1.2);
+    color: var(--branco);
+}

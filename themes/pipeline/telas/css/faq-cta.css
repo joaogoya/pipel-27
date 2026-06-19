@@ -1,0 +1,73 @@
+/* --- Accordion Custom FAQ --- */
+.accordion-custom .accordion-item {
+  background: transparent;
+}
+
+.accordion-custom .accordion-button {
+  background-color: #04233f;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 1.5rem 1.25rem; /* Mais altura conforme pedido */
+  border-radius: 0 !important;
+  border-bottom: 1px solid #ffffff; /* Linha de separação branca */
+  transition: all 0.3s ease;
+}
+
+/* Arredonda apenas o primeiro e o último para não ficar estranho */
+.accordion-custom .accordion-item:first-child .accordion-button {
+  border-radius: 8px 8px 0 0 !important;
+}
+.accordion-custom .accordion-item:last-child .accordion-button.collapsed {
+  border-radius: 0 0 8px 8px !important;
+  border-bottom: none;
+}
+
+.accordion-custom .accordion-button:not(.collapsed) {
+  background-color: #04233f;
+  color: #ffffff;
+  border-bottom: none;
+}
+
+.accordion-custom .accordion-body {
+  background-color: #ffffff;
+  color: #04233f;
+  border: 2px solid #04233f;
+  border-top: none;
+  padding: 2rem;
+}
+
+/* --- Card CTA e NAP --- */
+.card-cta-final {
+  background-color: #ffffff;
+  border-radius: 15px;
+  border-bottom: 5px solid #039ebd;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+}
+
+.bt-azul-marinho-cta {
+  background-color: #04233f;
+  color: #ffffff;
+  padding: 18px 45px;
+  border-radius: 50px;
+  font-weight: 700;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.bt-azul-marinho-cta:hover {
+  background-color: #039ebd;
+  color: #ffffff;
+}
+
+.nap-info {
+  border-top: 1px solid #eee;
+}
+
+.nap-info h6 {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.accordion-button::after {
+  filter: brightness(0) invert(1);
+}

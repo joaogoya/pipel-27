@@ -1,0 +1,134 @@
+/* --- Hero Section --- */
+.hero-section {
+    min-height: 85vh; /* Garante altura mínima mas permite crescer se necessário */
+    position: relative;
+    overflow: hidden;
+    background-color: #04233f;
+    display: flex;
+    align-items: center;
+    /* Zonas de segurança para evitar que os textos encostem no topo ou nos cards de baixo */
+    padding-top: 120px; 
+    padding-bottom: 160px; 
+}
+
+.hero-bg-img {
+    position: absolute;
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    right: 0;
+}
+
+.hero-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* Gradiente sólido na esquerda para leitura e transparente na direita para a imagem */
+    background: linear-gradient(to right, rgba(4, 35, 63, 1) 0%, rgba(4, 35, 63, 1) 45%, rgba(4, 35, 63, 0) 100%);
+    z-index: 2;
+}
+
+/* --- Tipografia Hero --- */
+.hero-title {
+    width: 95%;
+    line-height: 0.85;
+    margin-bottom: 20px;
+}
+
+.word-pulso {
+    font-weight: 800; /* Bold */
+    font-size: 11vw;  /* Escala com a largura da tela */
+    display: block;
+}
+
+.word-comercial {
+    font-weight: 300; /* Light */
+    font-size: 6.2vw; /* Ajustado para ter a mesma largura visual de PULSO */
+    letter-spacing: 0.02em;
+    display: block;
+}
+
+.hero-jargao {
+    width: 95%;
+    font-size: 2.2vw;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 0.8;
+    margin-bottom: 45px;
+}
+
+.hero-logo-fade {
+    opacity: 0.3;
+    max-width: 80%;
+}
+
+/* --- Botão Turquesa --- */
+.bt-turquesa {
+    background-color: #039ebd;
+    color: #fff;
+    padding: 16px 32px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    border: 2px solid transparent;
+}
+
+.bt-turquesa:hover {
+    background-color: #fff;
+    color: #04233f;
+    border-color: #fff;
+    transform: translateY(-3px);
+}
+
+/* --- RESPONSIVIDADE (MOBILE) --- */
+@media (max-width: 991px) {
+    .hero-section {
+        min-height: 90vh;
+        padding-top: 100px;
+        padding-bottom: 200px; /* Margem extra para não bater nos cards que sobem -80px */
+    }
+
+    .hero-text-container {
+        text-align: center; /* Centraliza textos e botão */
+    }
+
+    .hero-title {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .word-pulso { font-size: 20vw; }
+    .word-comercial { font-size: 11.2vw; }
+    
+    .hero-jargao { 
+        font-size: 4.8vw; 
+        width: 100%; 
+        margin-bottom: 55px; 
+        padding: 0 15px;
+    }
+
+    .hero-overlay {
+        /* No mobile o gradiente cobre mais a imagem para garantir leitura centralizada */
+        background: linear-gradient(to bottom, rgba(4, 35, 63, 0.95) 0%, rgba(4, 35, 63, 0.8) 100%);
+    }
+
+    .bt-turquesa {
+        display: inline-block;
+        width: auto;
+        min-width: 280px;
+        max-width: 95%;
+        margin: 0 auto;
+        white-space: normal; /* Permite quebra de linha se o texto for muito longo */
+        line-height: 1.2;
+        padding: 18px 25px;
+    }
+}
+
+/* --- TELAS GRANDES (LIMITE DE ESCALA) --- */
+@media (min-width: 1400px) {
+    .word-pulso { font-size: 155px; }
+    .word-comercial { font-size: 87px; }
+    .hero-jargao { font-size: 31px; }
+}

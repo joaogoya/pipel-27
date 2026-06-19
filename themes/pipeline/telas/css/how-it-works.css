@@ -1,0 +1,58 @@
+/* Seção Como Funciona */
+.section-title-ajuste {
+  font-size: 3.5rem;
+  line-height: 1.1;
+}
+
+.img-como-funciona {
+  /* No desktop, garante que ela comece no topo da coluna */
+  margin-top: 0;
+  width: 100%;
+  max-width: 450px; /* Limite para não estourar se a imagem for vertical */
+}
+
+.numero-turquesa {
+  color: #039ebd;
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 0.9;
+  min-width: 45px;
+}
+
+.item-titulo-maior {
+  font-size: 1.7rem;
+}
+
+.item-texto-maior {
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+
+.passo-item {
+  align-items: flex-start;
+}
+
+/* --- Responsivo --- */
+@media (max-width: 991px) {
+  .section-title-ajuste {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .img-como-funciona {
+    max-width: 80%;
+    margin-bottom: 40px;
+  }
+
+  .item-titulo-maior {
+    font-size: 1.5rem;
+  }
+
+  .item-texto-maior {
+    font-size: 1.15rem;
+  }
+
+  .numero-turquesa {
+    font-size: 2rem;
+  }
+}
