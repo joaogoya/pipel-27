@@ -1,20 +1,36 @@
-// Funções Utilitárias para o Pulso Comercial
-document.addEventListener("DOMContentLoaded", function() {
-
-    // 1. Scroll Suave para links internos
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                window.scrollTo({
-                    top: target.offsetTop - 80, // Compensa a altura da navbar
-                    behavior: 'smooth'
+document.addEventListener('DOMContentLoaded', () => {
+    // 1. DATA ANALYTICS TRACKER (O JS que você pediu)
+    const trackedElements = document.querySelectorAll('[data-analytics]');
+    
+    trackedElements.forEach(el => {
+        el.addEventListener('click', () => {
+            const eventID = el.getAttribute('data-analytics');
+            
+            // Envia para o GA4 se o gtag estiver presente
+            if (typeof gtag === 'function') {
+                gtag('event', 'click', {
+                    'event_category': 'Engagement',
+                    'event_label': eventID
                 });
             }
+            
+            // Log para debug (você pode remover depois)
+            console.log(`Pipeline Analytics: Click em ${eventID}`);
         });
     });
 
-    // 2. Feedback visual no Botão flutuante (opcional)
-    console.log("Pulso Comercial carregado. Sucesso na vitrine!");
+    // 2. BOTÃO VOLTAR AO TOPO
+    const btnTop = document.getElementById("btnScrollTop");
+
+    window.onscroll = () => {
+        if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+            btnTop.style.display = "block";
+        } else {
+            btnTop.style.display = "none";
+        }
+    };
+
+    btnTop.onclick = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
 });
