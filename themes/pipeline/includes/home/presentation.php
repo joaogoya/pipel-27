@@ -1,45 +1,25 @@
-<?php ?>
-
-
-
-    <section class="presentation-boxes">
-      <div class="container">
-        <div class="row g-4 justify-content-center">
-          <div class="col-lg-4">
-            <div class="card-apresentacao shadow">
-              <i class="fas fa-map-marked-alt icon-presentation mb-4"></i>
-              <h4 class="fw-bold azul-marinho">Visibilidade Local</h4>
-              <p class="text-presentation">
-                Seja visto por quem realmente importa: **o seu vizinho**. Domine
-                o mapa do Google e torne-se a **primeira escolha** de quem busca
-                o seu serviço ou produto na sua região agora mesmo.
-              </p>
+<section class="pos-hero py-5">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-md-4">
+                <div class="concept-box">
+                    <div class="concept-icon"><i class="fas fa-bullseye"></i></div>
+                    <h3 class="fw-bold">Apareça no Google</h3>
+                    <p>Não é sobre estar na internet, é sobre ser a <strong>resposta imediata</strong> para a busca do seu cliente local.</p>
+                </div>
             </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="card-apresentacao shadow">
-              <i class="fas fa-chart-line icon-presentation mb-4"></i>
-              <h4 class="fw-bold azul-marinho">Aumente Suas Vendas</h4>
-              <p class="text-presentation">
-                Chega de cliques vazios. Transformamos buscas em **vendas
-                reais** no seu caixa, atraindo um fluxo constante de clientes
-                prontos para comprar e impulsionar o seu faturamento.
-              </p>
+            <div class="col-md-4">
+                <div class="concept-box mt-md-4"> <div class="concept-icon"><i class="fas fa-gem"></i></div>
+                    <h3 class="fw-bold">Apresente seu Trabalho</h3>
+                    <p>Sites e perfis que transmitem <strong>autoridade e confiança</strong> logo no primeiro clique.</p>
+                </div>
             </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="card-apresentacao shadow">
-              <i class="fas fa-medal icon-presentation mb-4"></i>
-              <h4 class="fw-bold azul-marinho">Consultoria Estratégica</h4>
-              <p class="text-presentation">
-                Sem achismo. Aplicamos **inteligência de dados** para que seu
-                investimento renda de verdade, garantindo que seu negócio cresça
-                com autoridade e vença a concorrência local.
-              </p>
+            <div class="col-md-4">
+                <div class="concept-box mt-md-5"> <div class="concept-icon"><i class="fas fa-rocket"></i></div>
+                    <h3 class="fw-bold">Venda Mais</h3>
+                    <p>Aumente sua <strong>visibilidade local</strong> e sinta o reflexo direto no volume de contatos e vendas.</p>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </section>
+    </div>
+</section>

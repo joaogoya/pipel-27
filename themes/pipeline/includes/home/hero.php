@@ -1,41 +1,37 @@
-
-
-    <section class="hero-section d-flex align-items-center">
-      <img
-        src="<?php echo get_template_directory_uri(); ?>/assets/images/mercadinho-by-gemini.png"
-        alt="Lojas de rua e passantes"
-        class="hero-bg-img"
-        title="Comércio Local"
-      />
-      <div class="hero-overlay"></div>
-
-      <div class="container position-relative" style="z-index: 10">
+ <section class="hero-premium section-padding">
+    <div class="container">
         <div class="row align-items-center">
-          <div class="col-lg-6 hero-text-container">
-            <h1 class="text-white hero-title">
-              <span class="d-block word-pulso">PULSO</span>
-              <span class="d-block word-comercial">COMERCIAL</span>
-            </h1>
-            <p class="text-white hero-jargao">Sua vitrine pulsando no Google</p>
-            <a
-              href="#contato"
-              class="bt-turquesa text-decoration-none d-inline-block"
-            >
-              Quero minha vitrine no Google
-            </a>
-          </div>
-
-          <div class="col-lg-6 d-none d-lg-block text-end">
-            <img
-              src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-branco.png"
-              alt="Logo Pulso"
-              class="hero-logo-fade"
-            />
-          </div>
+            <div class="col-lg-6 hero-text-area">
+                <div class="reveal-box">
+                    <span class="badge-premium">Visibilidade Local</span>
+                    <h1 class="display-2 fw-bold main-title">
+                        Seu <span class="text-outline">trabalho</span> no <br>
+                        <span class="text-accent">pipeline</span> das <br>
+                        oportunidades.
+                    </h1>
+                </div>
+                <p class="hero-description mt-4">
+                    Conectamos sua paixão aos resultados que você merece através de <strong>estratégias de busca inteligente</strong>. Se o seu negócio não é visto, ele não existe.
+                </p>
+                <div class="hero-actions mt-5">
+                    <a href="#contato" class="btn-pipeline-main" data-analytics="hero-cta-principal">
+                        Começar Prospecção <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-lg-6 mt-5 mt-lg-0">
+                <div class="hero-img-frame">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200" 
+                         alt="Equipe Pipeline Digital trabalhando" 
+                         title="Estratégia e Decisão" 
+                         class="img-fluid img-main-hero">
+                    <div class="floating-card shadow-lg">
+                        <i class="fas fa-bolt text-accent"></i>
+                        <span>Performance Real</span>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </section>
-
-
-
-
+    </div>
+</section>
