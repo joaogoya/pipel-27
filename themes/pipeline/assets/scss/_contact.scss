@@ -1,0 +1,27 @@
+
+
+/* CTA BOX PREMIUM */
+.cta-box-premium {
+    background: #041d38;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.cta-box-premium::after {
+    content: '\f05d'; /* Icone de verificado do FontAwesome */
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    position: absolute;
+    font-size: 15rem;
+    bottom: -50px;
+    right: -30px;
+    color: rgba(255, 170, 23, 0.05);
+    z-index: -1;
+}
+
+.shadow-2 {
+    box-shadow: 0 40px 80px rgba(4, 29, 56, 0.15);
+}
+

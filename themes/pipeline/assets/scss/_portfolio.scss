@@ -1,0 +1,91 @@
+
+
+
+/* PORTFOLIO MASONRY CONFIG */
+.portfolio-masonry {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: 200px; /* Base para o Masonry */
+    grid-gap: 25px;
+}
+
+.portfolio-item {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+/* Tamanhos Diferentes para Criar o Ritmo */
+.item-large { grid-row: span 3; }
+.item-medium { grid-row: span 2; }
+.item-small { grid-row: span 1.5; }
+
+.portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/* OVERLAY PREMIUM */
+.portfolio-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(to bottom, rgba(4, 29, 56, 0) 0%, rgba(4, 29, 56, 0.95) 100%);
+    display: flex;
+    align-items: flex-end;
+    padding: 30px;
+    opacity: 0;
+    transition: 0.4s ease;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+    opacity: 1;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.1);
+}
+
+.overlay-content {
+    transform: translateY(20px);
+    transition: 0.5s ease;
+    color: white;
+}
+
+.portfolio-item:hover .overlay-content {
+    transform: translateY(0);
+}
+
+.client-category {
+    color: #ffaa17;
+    font-size: 0.7rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.btn-case-detail {
+    color: white;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    transition: 0.3s;
+}
+
+.btn-case-detail:hover {
+    color: #ffaa17;
+    border-color: #ffaa17;
+}
+
+/* Responsividade do Grid */
+@media (max-width: 768px) {
+    .portfolio-masonry { grid-auto-rows: 250px; }
+    .item-large, .item-medium, .item-small { grid-row: span 1; }
+}
+

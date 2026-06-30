@@ -1,52 +1,40 @@
-
-
-/* Cores do João */
+/* VARIÁVEIS */
 :root {
-    --turquesa: #039ebd;
-    --marinho: #04233f;
-    --branco: #ffffff;
+    --primary: #041d38;
+    --accent: #ffaa17;
+    --text-body: #444;
 }
 
-/* Gerais */
-body { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
-.azul-marinho { color: var(--marinho); }
-.text-turquesa { color: var(--turquesa); }
-.bg-marinho { background-color: var(--marinho); }
-.section-padding { padding: 100px 15px; }
+body {
+    background-color: #fdfdfd;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Open Sans', sans-serif; color: var(--text-body);
+}
 
-/* Botões Customizados */
-.bt-turquesa {
-    background-color: var(--turquesa);
-    color: var(--branco);
-    padding: 12px 28px;
-    border-radius: 30px;
-    box-shadow: 0 4px 10px rgba(3, 158, 189, 0.3);
-    font-weight: 600;
-    transition: all 0.3s ease;
+/* VOLTAR AO TOPO */
+#btnScrollTop {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    background: #ffaa17;
+    color: #041d38;
     border: none;
-}
-.bt-turquesa:hover {
-    background-color: var(--marinho);
-    color: var(--branco);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 15px rgba(3, 158, 189, 0.5);
-}
-
-.bt-azul {
-    background-color: var(--marinho);
-    color: var(--branco);
-    padding: 12px 28px;
-    border-radius: 30px;
-    box-shadow: 0 4px 10px rgba(4, 35, 63, 0.3);
-    font-weight: 600;
-    transition: all 0.3s ease;
-    border: none;
-}
-.bt-azul:hover {
-    filter: brightness(1.2);
-    color: var(--branco);
+    width: 50px; height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 10px 25px rgba(255,170,23,0.4);
+    cursor: pointer;
+    transition: 0.4s;
 }
 
-.pd-body{
-     padding: 20px 20px;
-}
+#btnScrollTop:hover { transform: scale(1.1); background: #fff; }
+
+
+
+
+
+
+
+
+

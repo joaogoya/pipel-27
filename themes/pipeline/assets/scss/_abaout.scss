@@ -1,0 +1,108 @@
+
+
+
+
+/*sobre*/
+
+
+/* TÍTULO ELABORADO LATERAL (O estilo Carol Goya) */
+.title-elaborado-col {
+    position: relative;
+    padding-left: 20px;
+}
+
+.title-elaborado-col::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    bottom: 10px;
+    width: 6px;
+    background-color: #ffaa17;
+    border-radius: 10px;
+}
+
+.subtitle-tag {
+    display: block;
+    color: #ffaa17;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    font-size: 0.75rem;
+    margin-bottom: 10px;
+}
+
+/* DECORAÇÃO DE FUNDO (Watermark) */
+.bg-decoration-text {
+    position: absolute;
+    top: 50%;
+    right: -5%;
+    transform: translateY(-50%);
+    font-size: 15rem;
+    font-weight: 900;
+    color: rgba(4, 29, 56, 0.02);
+    z-index: -1;
+    pointer-events: none;
+    user-select: none;
+}
+
+/* CONTAINER DA IMAGEM COM MOLDURA */
+.about-img-container {
+    position: relative;
+    padding: 15px;
+}
+
+.rounded-custom {
+    border-radius: 40px 5px 40px 5px; /* Formato irregular moderno */
+}
+
+.experience-badge {
+    position: absolute;
+    top: -20px;
+    right: -10px;
+    background: #041d38;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(4, 29, 56, 0.2);
+    text-align: center;
+    border-bottom: 4px solid #ffaa17;
+}
+
+.experience-badge .number {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 900;
+    line-height: 1;
+    color: #ffaa17;
+}
+
+.experience-badge .label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 5px;
+    display: block;
+}
+
+/* DIVISOR VERTICAL */
+.divider-v {
+    width: 1px;
+    height: 40px;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.about-quote {
+    font-style: italic;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* SOMBRAS */
+.shadow-2 {
+    box-shadow: 0 40px 80px rgba(4, 29, 56, 0.12);
+}
+
+
+
+

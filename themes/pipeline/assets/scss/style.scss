@@ -6,9 +6,15 @@
 // 2. IMPORTAÇÃO DOS COMPONENTES
 // Aqui usamos @use 'as *' para carregar os estilos na ordem da cascata CSS
 @use "comon" as *; // Base, resets e fontes
-@use "logo" as *; // Identidade visual
+@use "typography" as *; // Tipografia
 @use "navbar" as *; // Menu lateral
 @use "hero" as *; // Banner principal
 @use "presentation" as *; // Apresentação
-@use "steps" as *; // Seção Como Funciona
+@use "abaout" as *; // Sobre
+@use "services" as *; // Serviços
+@use "portfolio" as *; // Portfólio
+@use "depos" as *; // Depoimentos
+@use "contact" as *; // Contato
+
 @use "footer" as *; // Rodapé
+

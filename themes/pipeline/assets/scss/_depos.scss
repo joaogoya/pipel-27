@@ -1,0 +1,30 @@
+
+
+
+
+
+
+/* WRAPPER DO PLUGIN GPE */
+.plugin-gpe-wrapper {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+/* FAQ CUSTOM */
+.custom-faq .accordion-item {
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.custom-faq .accordion-button {
+    padding: 20px 0;
+    font-size: 1.1rem;
+    color: #041d38;
+    background: none !important;
+    box-shadow: none !important;
+}
+
+.custom-faq .accordion-button:not(.collapsed) {
+    color: #ffaa17;
+}
+
