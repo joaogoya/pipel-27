@@ -1,122 +1,127 @@
 
-/* HERO COM IMG TAG */
-.hero {
-    position: relative;
-    height: 85vh;
-    overflow: hidden;
-    background-color: #000;
-}
-.hero-img {
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    object-fit: cover;
-    z-index: 1;
-    opacity: 0.5; /* Escurece para dar contraste ao texto */
-}
-.hero-content {
-    position: relative;
-    z-index: 2;
-}
-.highlight { 
-    color: var(--accent); 
-    font-weight: 800; 
-    border-bottom: 4px solid var(--accent);
-}
-
-
-
-
 /* HERO DESIGN */
 .hero-premium {
-    background: linear-gradient(135deg, #041d38 0%, #020f1d 100%);
-    padding: 120px 0;
+
+    //backgorund
+    position: relative;
+    padding: 100px 0; 
     color: white;
-    border-bottom-left-radius: 80px; /* Curva moderna no fundo */
-}
 
-.badge-premium {
-    background: rgba(255, 170, 23, 0.1);
-    color: #ffaa17;
-    padding: 6px 15px;
-    border-radius: 4px;
-    font-size: 0.8rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
 
-.main-title {
-    line-height: 1.1;
-    margin-top: 20px;
-    letter-spacing: -2px;
-}
+    // CONFIGURAÇÃO MOBILE: Imagem de fundo com Overlay Azul-Marinho integrado no linear-gradient
+    background: linear-gradient(135deg, rgba(4, 29, 56, 0.85) 0%, rgba(2, 15, 29, 0.75) 100%),
+        url('../images/mobile-with-google-maps.jpg') no-repeat center center;
+    background-size: cover;
 
-.text-outline {
-    -webkit-text-stroke: 1px rgba(255,255,255,0.3);
-    color: transparent;
-}
+    /* COLUNA DA ESQUERDA - TEXTOS */
 
-.hero-description {
-    max-width: 500px;
-    font-size: 1.1rem;
-    color: rgba(255,255,255,0.7);
-}
+    .badge-premium {// subtitulo
+        font-family: var(--font-body);
+        background: rgba(255, 170, 23, 0.1);
+        color: #ffaa17;
+        padding: 6px 15px;
+        border-radius: 4px;
+        font-size: 0.8rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
 
-/* BOTÃO PREMIUM */
-.btn-pipeline-main {
-    background-color: #ffaa17;
-    color: #041d38;
-    padding: 18px 35px;
-    border-radius: 50px;
-    font-weight: 800;
-    text-decoration: none;
-    display: inline-block;
-    transition: 0.4s;
-    box-shadow: 0 10px 30px rgba(255, 170, 23, 0.2);
-}
+    .main-title { //h1
+        font-family: var(--font-headings);
+        line-height: 1.2;
+        margin-top: 20px;
+        letter-spacing: -1px; // Um pouco menos agressivo no mobile para evitar quebras estranhas
+        font-size: calc(2.2rem + 1.5vw); // Responsividade nativa no tamanho da fonte
+    }
 
-.btn-pipeline-main:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(255, 170, 23, 0.4);
-    color: #041d38;
-}
+    .hero-description { //frase
+        font-family: var(--font-body);
+        max-width: 500px;
+        font-size: 1.05rem;
+        color: rgba(255, 255, 255, 0.8);
+        line-height: 1.6;
+    }
 
-/* FRAME DA IMAGEM */
-.hero-img-frame {
-    position: relative;
-    padding: 20px;
-}
+    .btn-pipeline-main { //btn cta
+        background-color: #ffaa17;
+        color: #041d38;
+        padding: 16px 32px;
+        border-radius: 50px;
+        font-weight: 800;
+        text-decoration: none;
+        display: inline-block;
+        transition: 0.4s;
+        box-shadow: 0 10px 30px rgba(255, 170, 23, 0.2);
+        width: 100%; // Força o botão a ocupar a largura do bloco no celular, pegada app
+        max-width: 325px; // Mas limita para não ficar bizarramente gigante
 
-.img-main-hero {
-    border-radius: 30px;
-    box-shadow: 0 30px 60px rgba(0,0,0,0.5);
-    position: relative;
-    z-index: 2;
-}
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(255, 170, 23, 0.4);
+            color: #041d38;
+        }
+    }
 
-.hero-img-frame::before { /* O detalhe decorativo que usamos na Carol */
-    content: '';
-    position: absolute;
-    top: -10px; right: -10px;
-    width: 200px; height: 200px;
-    border: 15px solid #ffaa17;
-    border-radius: 30px;
-    z-index: 1;
-}
+    /* RESET E AJUSTES PARA DESKTOP (Telas a partir de 992px) */
+    @media (min-width: 992px) {
 
-.floating-card {
-    position: absolute;
-    bottom: 30px;
-    left: -40px;
-    background: white;
-    color: #041d38;
-    padding: 20px 30px;
-    border-radius: 15px;
-    z-index: 3;
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    font-weight: 800;
-}
+        //bacground
+        padding: 120px 0;
+        border-bottom-left-radius: 80px;
 
+        /* Remove a imagem de fundo no desk para focar no design puro
+        com a img, frame e txt de apio da coluna da direita */
+        background: linear-gradient(135deg, #041d38 0%, #020f1d 100%);
+
+        .main-title {//j1
+            line-height: 1.1;
+            letter-spacing: -2px;
+        }
+
+        .btn-pipeline-main { // btn cta
+            width: auto; 
+        }
+
+        /* Estilos da coluna da direita - img, frame e txt de apio */
+        .hero-img-frame {
+            position: relative;
+            padding: 20px;
+
+            &::before { //frame
+                content: '';
+                position: absolute;
+                top: -10px;
+                right: -10px;
+                width: 200px;
+                height: 200px;
+                border: 15px solid #ffaa17;
+                border-radius: 30px;
+                z-index: 1;
+            }
+
+            .img-main-hero { // img
+                border-radius: 30px;
+                box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+                position: relative;
+                z-index: 2;
+            }
+
+            .floating-card { //txt apio
+                position: absolute;
+                bottom: 30px;
+                left: -40px;
+                background: white;
+                color: #041d38;
+                padding: 20px 30px;
+                border-radius: 15px;
+                z-index: 3;
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                font-weight: 800;
+                white-space: nowrap; // Evita quebra de linha no card flutuante
+            }
+        }
+    }
+}

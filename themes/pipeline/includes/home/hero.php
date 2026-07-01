@@ -1,37 +1,53 @@
- <section class="hero-premium section-padding">
+<section class="hero-premium section-padding">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-lg-6 hero-text-area">
-                <div class="reveal-box">
-                    <span class="badge-premium">Visibilidade Local</span>
-                    <h1 class="display-2 fw-bold main-title">
-                        Seu <span class="text-outline">trabalho</span> no <br>
-                        <span class="text-accent">pipeline</span> das <br>
-                        oportunidades.
-                    </h1>
-                </div>
-                <p class="hero-description mt-4">
-                    Conectamos sua paixão aos resultados que você merece através de <strong>estratégias de busca inteligente</strong>. Se o seu negócio não é visto, ele não existe.
+
+            <!-- Coluna da esquerda: Textos (Centralizados no Mobile, Esquerda no Desktop) -->
+            <div class="col-lg-6 hero-text-area text-center text-lg-start">
+
+                <!-- subtitulo -->
+                <h2 class="badge-premium d-inline-block">PERFORMANCE LOCAL ATRAVÉS DO DIGITAL</h2>
+
+                <!-- titulo -->
+                <h1 class="display-2 fw-bold main-title">
+                    A sua <span class="text-accent">EMPRESA</span> vendendo no <span class="text-accent">GOOGLE</span>
+                </h1>
+
+                <!-- frase -->
+                <p class="hero-description mt-4 mx-auto mx-lg-0">
+                    Não dependa apenas de indicações ou da sorte para vender. Nós posicionamos o seu negócio local na
+                    palma da mão de quem abre o maior buscador do mundo para procurar pelos seus serviços na sua região.
                 </p>
+
+                <!-- btn cta -->
                 <div class="hero-actions mt-5">
                     <a href="#contato" class="btn-pipeline-main" data-analytics="hero-cta-principal">
-                        Começar Prospecção <i class="fas fa-arrow-right ms-2"></i>
+                        Quero vender no Google <i class="fas fa-arrow-right ms-2"></i>
                     </a>
                 </div>
+
             </div>
-            
-            <div class="col-lg-6 mt-5 mt-lg-0">
+
+            <!-- Segunda coluna: Escondida no Mobile, visível no Desk -->
+            <div class="col-lg-6 mt-5 mt-lg-0 d-none d-lg-block">
+                
+                <!-- frame  - ::before dessa div -->
                 <div class="hero-img-frame">
-                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200" 
-                         alt="Equipe Pipeline Digital trabalhando" 
-                         title="Estratégia e Decisão" 
-                         class="img-fluid img-main-hero">
+
+                    <!-- img -->
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mobile-with-google-maps.jpg"
+                        alt="Equipe Pipeline Digital trabalhando" title="Estratégia e Decisão"
+                        class="img-fluid img-main-hero">
+
+                    <!-- txt apoio -->
                     <div class="floating-card shadow-lg">
                         <i class="fas fa-bolt text-accent"></i>
-                        <span>Performance Real</span>
+                        <span>Mais clientes do digital para o local</span>
                     </div>
-                </div>
-            </div>
+
+                </div> <!-- fim frame -->
+
+            </div> <!-- fim segunda coluna -->
         </div>
     </div>
 </section>
