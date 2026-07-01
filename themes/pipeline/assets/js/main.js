@@ -1,20 +1,36 @@
-(function ($) {
-  "use strict";
-
-  document.addEventListener('click', function (event) {
-  const menuContainer = document.getElementById('navbarNav'); // Insira o ID do seu menu collapse
-  const menuBotao = document.querySelector('.navbar-toggler');
-  
-  // Se o menu estiver aberto e o clique for fora do menu e fora do botão
-  if (menuContainer.classList.contains('show') && 
-      !menuContainer.contains(event.target) && 
-      !menuBotao.contains(event.target)) {
+document.addEventListener('DOMContentLoaded', () => {
+    // 1. DATA ANALYTICS TRACKER (O JS que você pediu)
+    const trackedElements = document.querySelectorAll('[data-analytics]');
     
-    // Usa a API nativa do Bootstrap 5 para fechar
-    const bootstrapCollapse = bootstrap.Collapse.getOrCreateInstance(menuContainer);
-    bootstrapCollapse.hide();
-  }
+    trackedElements.forEach(el => {
+        el.addEventListener('click', () => {
+            const eventID = el.getAttribute('data-analytics');
+            
+            // Envia para o GA4 se o gtag estiver presente
+            if (typeof gtag === 'function') {
+                gtag('event', 'click', {
+                    'event_category': 'Engagement',
+                    'event_label': eventID
+                });
+            }
+            
+            // Log para debug (você pode remover depois)
+            console.log(`Pipeline Analytics: Click em ${eventID}`);
+        });
+    });
+
+    // 2. BOTÃO VOLTAR AO TOPO
+    const btnTop = document.getElementById("btnScrollTop");
+
+    window.onscroll = () => {
+        if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+            btnTop.style.display = "block";
+        } else {
+            btnTop.style.display = "none";
+        }
+    };
+
+    btnTop.onclick = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
 });
-
-
-})(jQuery);
