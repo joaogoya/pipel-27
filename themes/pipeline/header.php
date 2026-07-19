@@ -5,7 +5,7 @@
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon"
-        href="<?php bloginfo('template_url'); ?>/assets/images/logo-redondo-poa-car-service-fundo-transparente.png"
+        href="<?php bloginfo('template_url'); ?>/assets/images/logo.png"
         type="image/png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
