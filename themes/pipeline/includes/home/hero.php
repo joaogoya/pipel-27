@@ -10,17 +10,18 @@
 
                 <!-- titulo -->
                 <h1 class="display-2 fw-bold main-title">
-                    A sua <span class="text-accent">EMPRESA</span> vendendo no <span class="text-accent">GOOGLE</span>
+                    A sua <span class="text-accent">EMPRESA</span> vendendo no  <br>
+                    <span class="text-accent">GOOGLE</span>
                 </h1>
 
                 <!-- frase -->
                 <p class="hero-description mt-4 mx-auto mx-lg-0">
-                    Não dependa apenas de indicações ou da sorte para vender. Nós posicionamos o seu negócio local na
+                    Não dependa apenas de indicações ou da sorte para vender. Nós posicionamos o seu <span class="text-accent">negócio local</span> na
                     palma da mão de quem abre o maior buscador do mundo para procurar pelos seus serviços na sua região.
                 </p>
 
                 <!-- btn cta -->
-                <div class="hero-actions mt-5">
+                <div class="hero-actions mt-5"> 
                     <a href="#contato" class="btn-pipeline-main" data-analytics="hero-cta-principal">
                         Quero vender no Google <i class="fas fa-arrow-right ms-2"></i>
                     </a>

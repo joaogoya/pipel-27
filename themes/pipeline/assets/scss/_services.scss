@@ -1,40 +1,4 @@
 
-
-/* servicos */
-
-
-
-/* CARDS DE SERVIÇO */
-.service-card {
-    background: #fff;
-    border-radius: 15px;
-    overflow: hidden;
-    transition: 0.3s;
-}
-.card-img-wrapper { position: relative; }
-.badge-service {
-    position: absolute;
-    top: 15px; right: 15px;
-    background: var(--accent);
-    color: var(--primary);
-    font-size: 10px; font-weight: bold;
-    padding: 5px 12px; border-radius: 20px;
-}
-.btn-card-link {
-    display: flex;
-    align-items: center;
-    background: var(--primary);
-    color: #fff;
-    padding: 12px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-.btn-card-link:hover .icon-toggle::before { content: "\f054"; } /* Muda de + para > */
-
-
-
 /* CARD DESIGN */
 .service-premium-card {
     background: #ffffff;
