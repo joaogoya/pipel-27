@@ -14,6 +14,15 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+     <!-- Preload da Imagem do Hero (LCP) -->
+    <?php
+        if (is_front_page()) {
+            $hero_preload_id = get_afc_by_page_slug('imagem_do_hero', 'home_config', 'hero');
+            echo pipe_render_hero_preload($hero_preload_id);
+        }
+    ?>
+    <!-- FIM Preload da Imagem do Hero (LCP) -->
+
     <?php wp_head(); ?>
 </head>
 

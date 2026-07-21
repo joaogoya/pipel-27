@@ -33,6 +33,9 @@
         margin-top: 20px;
         letter-spacing: -1px; // Um pouco menos agressivo no mobile para evitar quebras estranhas
         font-size: calc(2.2rem + 1.5vw); // Responsividade nativa no tamanho da fonte
+        strong{
+            color: var(--accent);
+        }
     }
 
     .hero-description { //frase
@@ -41,6 +44,9 @@
         font-size: 1.05rem;
         color: rgba(255, 255, 255, 0.8);
         line-height: 1.6;
+        strong{
+            color: var(--accent);
+        }
     }
 
     .btn-pipeline-main { //btn cta
