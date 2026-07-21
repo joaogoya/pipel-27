@@ -8,54 +8,56 @@
                 </div>
             </div>
             <div class="col-lg-4 d-flex align-items-end justify-content-lg-end mt-3 mt-lg-0">
-                <p class="small text-muted mb-0">Transformando visibilidade em faturamento real para negócios locais.</p>
+                <p class="small text-muted mb-0">Transformando visibilidade em faturamento real para negócios locais.
+                </p>
             </div>
         </div>
 
         <div class="portfolio-masonry">
-            <div class="portfolio-item item-large">
-                <img src="https://images.unsplash.com/photo-1486006396193-c340e69d3ee7?q=80&w=800" alt="Case Automotivo" class="img-fluid">
-                <div class="portfolio-overlay">
-                    <div class="overlay-content">
-                        <span class="client-category">Automotivo</span>
-                        <h4 class="fw-bold">2A Automotiva</h4>
-                        <a href="#" class="btn-case-detail" data-analytics="portfolio-click-2a">Ver Case <i class="fas fa-external-link-alt ms-2"></i></a>
-                    </div>
-                </div>
-            </div>
 
-            <div class="portfolio-item item-medium">
-                <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=600" alt="Case Tecnologia" class="img-fluid">
-                <div class="portfolio-overlay">
-                    <div class="overlay-content">
-                        <span class="client-category">Consultoria</span>
-                        <h4 class="fw-bold">Alexandre Consultoria</h4>
-                        <a href="#" class="btn-case-detail" data-analytics="portfolio-click-alexandre">Ver Case <i class="fas fa-external-link-alt ms-2"></i></a>
-                    </div>
-                </div>
-            </div>
+            <?php
+            $args = array(
+                'post_type'      => 'post', // Tipo de post (post, page, ou custom post type)
+                'posts_per_page' => 4,      // Quantidade de posts (-1 para todos)
+                'orderby'        => 'date', // Critério de ordenação
+                'order'          => 'DESC', // Ordem decrescente (do mais recente para o mais antigo)
+            );
 
-            <div class="portfolio-item item-medium">
-                <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=600" alt="Case Estética" class="img-fluid">
-                <div class="portfolio-overlay">
-                    <div class="overlay-content">
-                        <span class="client-category">Saúde & Bem-estar</span>
-                        <h4 class="fw-bold">Carol Goya Estética</h4>
-                        <a href="#" class="btn-case-detail" data-analytics="portfolio-click-carol">Ver Case <i class="fas fa-external-link-alt ms-2"></i></a>
-                    </div>
-                </div>
-            </div>
+            $query = new WP_Query($args);
 
-            <div class="portfolio-item item-small">
-                <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=600" alt="Case Logística" class="img-fluid">
-                <div class="portfolio-overlay">
-                    <div class="overlay-content">
-                        <span class="client-category">Logística</span>
-                        <h4 class="fw-bold">WW Fretes</h4>
-                        <a href="#" class="btn-case-detail" data-analytics="portfolio-click-ww">Ver Case <i class="fas fa-external-link-alt ms-2"></i></a>
+            if ($query->have_posts()) :
+                while ($query->have_posts()) : $query->the_post();
+            ?>
+                    <div class="portfolio-item item-medium">
+
+                        <!-- img -->
+                        <?php echo pipe_get_img(get_the_ID(), true, 'medium', 'img-fluid'); ?>
+
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+
+                                <?php
+                                    $primary_category = get_post_primary_category(get_the_ID());
+                                ?>
+                                <span class="client-category">
+                                   <b>Cliente:</b> <?PHP echo $primary_category->name; ?>
+                                </span>
+                                <h4 class="fw-bold">
+                                    <?php the_title(); ?>
+                                </h4>
+                                <a href="#" class="btn-case-detail" data-analytics="portfolio-click-alexandre">Ver Case <i
+                                        class="fas fa-external-link-alt ms-2"></i></a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
+            <?php
+                endwhile;
+                wp_reset_postdata(); // Restaura os dados originais do post
+            else:
+                echo 'Nenhum post encontrado.';
+            endif;
+            ?>
+
         </div>
     </div>
 </section>

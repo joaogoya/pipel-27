@@ -15,6 +15,10 @@
                     <?php echo get_afc_by_page_slug('titulo_do_hero', 'home_config', 'hero'); ?>
                 </h1>
 
+                  <h2 class="badge-premium d-inline-block">
+                    <?php echo get_afc_by_page_slug('subtitulo_02_da_home', 'home_config', 'hero'); ?>
+                </h2>
+
                 <!-- frase -->
                 <div class="hero-description mt-4 mx-auto mx-lg-0">
                     <?php echo get_afc_by_page_slug('frase_de_apoio', 'home_config', 'hero'); ?>

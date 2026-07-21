@@ -152,6 +152,53 @@ function category_has_children($id_post)
 }
 
 
+
+/*******************************************************/
+/********** CATEGORIA PRINCIPAL DO POST ****************/
+/*******************************************************/
+
+function get_post_primary_category($post_id) {
+
+    // 1. Pega o ID do post atual no loop
+    $post_id = get_the_ID();
+
+    // 2. Busca todas as categorias vinculadas a este post de forma nativa
+    $all_categories = get_the_category( $post_id );
+
+    $primary_category = null;
+
+    if ( ! empty( $all_categories ) ) {
+        
+        // 3. Verifica se o Yoast SEO está ativo e se a classe existe
+        if ( class_exists( 'WPSEO_Primary_Term' ) ) {
+            
+            // Instancia o objeto da categoria principal do Yoast para o post
+            $wpseo_primary_term = new WPSEO_Primary_Term( 'category', $post_id );
+            $primary_cat_id     = $wpseo_primary_term->get_primary_term();
+            
+            // Se o usuário tiver selecionado uma categoria como principal no painel
+            if ( $primary_cat_id ) {
+                $yoast_term = get_term( $primary_cat_id );
+                
+                // Garante que não há erros no retorno antes de definir
+                if ( ! is_wp_error( $yoast_term ) && $yoast_term ) {
+                    $primary_category = $yoast_term;
+                }
+            }
+        }
+        
+        // 4. Fallback (Reserva): Se o Yoast não estiver ativo ou se o post não tiver 
+        // uma categoria marcada como principal, escolhe o primeiro item do array
+        if ( ! $primary_category ) {
+            $primary_category = $all_categories[0];
+        }
+    }
+
+    return $primary_category;
+}
+
+
+
 /*******************************************************/
 /***************** GET ID BY SLUG  *********************/
 /*******************************************************/

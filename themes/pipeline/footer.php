@@ -33,28 +33,44 @@
             <div class="col-lg-6">
                 <h5 class="fw-bold mb-4 text-accent">Últimas do Blog</h5>
                 <div class="row g-3">
-                    <div class="col-md-6">
-                        <a href="#" class="blog-footer-card d-flex align-items-center text-decoration-none">
-                            <div class="blog-thumb">
-                                <img src="https://images.unsplash.com/photo-1432888622747-4eb9a8f2c20e?q=80&w=150"
-                                    alt="SEO Local">
+
+                    <?php
+                    $args = array(
+                        'post_type'      => 'post', // Tipo de post (post, page, ou custom post type)
+                        'posts_per_page' => 4,      // Quantidade de posts (-1 para todos)
+                        'orderby'        => 'date', // Critério de ordenação
+                        'order'          => 'DESC', // Ordem decrescente (do mais recente para o mais antigo)
+                    );
+
+                    $query = new WP_Query($args);
+
+                    if ($query->have_posts()) :
+                        while ($query->have_posts()) : $query->the_post();
+                    ?>
+                            <div class="col-md-6">
+                                <a href="#" class="blog-footer-card d-flex align-items-center text-decoration-none">
+                                    <div class="blog-thumb">
+                                        
+                                            <!-- img -->
+                        <?php echo pipe_get_img(get_the_ID(), true, 'thumbnail', 'img-fluid'); ?>
+                                    </div>
+                                    <div class="blog-info ms-3">
+                                        <h6 class="mb-0 text-white small fw-bold">
+                                            <?php the_title(); ?>
+                                        </h6>
+                                    </div>
+                                </a>
                             </div>
-                            <div class="blog-info ms-3">
-                                <h6 class="mb-0 text-white small fw-bold">Como dominar o Google Maps em 2026</h6>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-6">
-                        <a href="#" class="blog-footer-card d-flex align-items-center text-decoration-none">
-                            <div class="blog-thumb">
-                                <img src="https://images.unsplash.com/photo-1551288049-bbbda546697a?q=80&w=150"
-                                    alt="Google Ads">
-                            </div>
-                            <div class="blog-info ms-3">
-                                <h6 class="mb-0 text-white small fw-bold">ROI em Google Ads: O guia definitivo</h6>
-                            </div>
-                        </a>
-                    </div>
+                    <?php
+                        endwhile;
+                        wp_reset_postdata(); // Restaura os dados originais do post
+                    else:
+                        echo 'Nenhum post encontrado.';
+                    endif;
+                    ?>
+
+
+           
                 </div>
                 <a href="#" class="btn btn-outline-light btn-sm mt-4 w-100 fw-bold border-opacity-25"
                     data-analytics="footer-btn-blog">VISITAR BLOG COMPLETO</a>
@@ -78,14 +94,14 @@
 <button id="btnScrollTop" title="Voltar ao topo"><i class="fas fa-arrow-up"></i></button>
 
 <script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Pipeline Digital",
-    "url": "https://pipelinedigital.com.br",
-    "description": "Especialistas em visibilidade local e marketing estratégico no Google em Porto Alegre.",
-    "about": ["SEO", "Google Ads", "GPE", "Landing Pages"]
-}
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Pipeline Digital",
+        "url": "https://pipelinedigital.com.br",
+        "description": "Especialistas em visibilidade local e marketing estratégico no Google em Porto Alegre.",
+        "about": ["SEO", "Google Ads", "GPE", "Landing Pages"]
+    }
 </script>
 
 <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

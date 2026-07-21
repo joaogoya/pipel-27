@@ -6,13 +6,9 @@
         </div>
 
         <div class="plugin-gpe-wrapper p-4 p-md-5 rounded-5 shadow-lg">
-            <div id="google-reviews-plugin" class="text-center py-4">
-                <i class="fab fa-google fa-3x text-accent mb-3"></i>
-                <p class="lead">Puxando avaliações reais do Google Perfil de Empresas...</p>
-                <div class="stars text-warning">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                </div>
-            </div>
+
+                <?php echo do_shortcode('[trustindex no-registration=google] '); ?>
+                
         </div>
     </div>
 </section>
