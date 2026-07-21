@@ -37,7 +37,7 @@
                         
                         <a href="<?php echo get_afc_by_page_slug('instagram', 'home_config', 'informacoes-de-contato'); ?>" target="_blank" class="topbar-social-link" title="Instagram">
                             <i class="fab fa-instagram"></i>
-                        </a>
+                        </a>   
 
                         <!-- <a href="<?php echo get_afc_by_page_slug('whatsapp', 'home_config', 'informacoes-de-contato'); ?>" class="topbar-social-link" title="WhatsApp">
                             <i class="fab fa-whatsapp"></i>
