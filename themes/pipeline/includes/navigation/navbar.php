@@ -1,5 +1,4 @@
-<!-- NAVBAR -->
- 
+<!-- NAVBAR --> 
     <nav class="navbar navbar-expand-lg sticky-top bg-dark navbar-dark">
         <div class="container">
 
@@ -10,7 +9,6 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPipeline">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
 
             <!-- menu -->
             <div class="collapse navbar-collapse" id="navbarPipeline">
