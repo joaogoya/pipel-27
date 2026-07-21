@@ -21,5 +21,12 @@ jobs:
         username: ${{ secrets.ftp_user }}
         password: ${{ secrets.ftp_password }}
         server-dir: public_html/homolog/pipe-27/wp-content/
+        
+        # Desativa a deleção agressiva/recursiva
         dangerous-clean-slate: false
+        
+        # Faz o scan real no FTP e evita o crash 550 em pastas inexistentes
+        force-complete-file-list-check: true
+        
+        # Mostra os detalhes no log do GitHub
         log-level: verbose

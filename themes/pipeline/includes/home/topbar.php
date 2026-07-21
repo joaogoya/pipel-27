@@ -41,7 +41,7 @@
 
                         <!-- <a href="<?php echo get_afc_by_page_slug('whatsapp', 'home_config', 'informacoes-de-contato'); ?>" class="topbar-social-link" title="WhatsApp">
                             <i class="fab fa-whatsapp"></i>
-                        </a> -->
+                        </a> -->   
 
                         <a href="<?php echo get_afc_by_page_slug('youtube', 'home_config', 'informacoes-de-contato'); ?>" target="_blank" class="topbar-social-link" title="YouTube">
                             <i class="fa-brands fa-youtube"></i>
