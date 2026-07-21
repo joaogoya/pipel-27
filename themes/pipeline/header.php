@@ -18,3 +18,10 @@
 </head>
 
 <body>
+
+<header id="masthead" class="site-header">
+    <?php get_template_part('includes/navigation/topbar'); ?>
+    <?php get_template_part('includes/navigation/navbar'); ?>
+</header>
+
+<main id="conteudo-principal">
