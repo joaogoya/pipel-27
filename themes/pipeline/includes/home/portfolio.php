@@ -3,8 +3,8 @@
         <div class="row mb-5">
             <div class="col-lg-8">
                 <div class="title-elaborado-col">
-                    <span class="subtitle-tag">Cases de Sucesso</span>
-                    <h2 class="display-5 fw-bold">Quem confia no <span class="text-accent">nosso Pipeline.</span></h2>
+                    <span class="subtitle-tag">Nossa melhor métrica é o</span>
+                    <h2 class="display-5 fw-bold">Sucesso dos <span class="text-accent">Clientes.</span></h2>
                 </div>
             </div>
             <div class="col-lg-4 d-flex align-items-end justify-content-lg-end mt-3 mt-lg-0">

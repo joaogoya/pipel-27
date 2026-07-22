@@ -118,3 +118,74 @@
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 1. Transforma o Card em Container Flex Coluna */
+.service-premium-card {
+  background: #ffffff;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(4, 29, 56, 0.04);
+  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+
+  /* ADICIONADO AQUI: Flexbox vertical */
+  display: flex;
+  flex-direction: column;
+}
+
+/* 2. O Body ocupa todo o espaço restante e também vira Flex Coluna */
+.card-body-content {
+  padding: 30px;
+  
+  /* ADICIONADO AQUI */
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Força o conteúdo a preencher toda a altura disponível */
+}
+
+/* 3. O Botão é empurrado para o bottom com margin-top: auto */
+.btn-service-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #041d38;
+  color: #ffffff;
+  padding: 12px 12px 12px 25px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.85rem;
+  
+  /* ALTERADO AQUI: Em vez de margin-top: 25px fixo, usamos auto */
+  margin-top: auto; 
+  padding-top: 12px; /* Mantém um respiro mínimo se o texto for muito longo */
+  transition: 0.3s;
+}
+
+
+
+
+
+
+
+
+

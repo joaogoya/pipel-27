@@ -2,9 +2,9 @@
     <div class="container">
 
         <div class="title-elaborado-center mb-5">
-            <span class="subtitle-tag d-block text-center">O que fazemos</span>
+            <span class="subtitle-tag d-block text-center">Mais do que tecnologia, comunicação</span>
             <h2 class="display-5 fw-bold text-center">
-                Estratégias para <span class="text-accent">Acelerar seu Pipeline</span> 
+                Nosso <span class="text-accent">Pipeliene</span> para você <span class="text-accent">Vender mais</span> 
             </h2>
         </div>
 
