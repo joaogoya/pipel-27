@@ -68,9 +68,7 @@
                         echo 'Nenhum post encontrado.';
                     endif;
                     ?>
-
-
-           
+                    
                 </div>
                 <a href="#" class="btn btn-outline-light btn-sm mt-4 w-100 fw-bold border-opacity-25"
                     data-analytics="footer-btn-blog">VISITAR BLOG COMPLETO</a>

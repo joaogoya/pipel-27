@@ -31,6 +31,56 @@
 <header id="masthead" class="site-header">
     <?php get_template_part('includes/navigation/topbar'); ?>
     <?php get_template_part('includes/navigation/navbar'); ?>
+    <?php get_template_part('includes/navigation/navbarfixed'); ?>
 </header>
 
-<main id="conteudo-principal">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<main id="home">

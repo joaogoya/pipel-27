@@ -1,12 +1,28 @@
-<nav class="navbar navbar-expand-sm navbar-light fixed-top">
-    <div class="container">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent2">
-            <div class="nav navbar-nav ml-auto">
-                <?php get_template_part('includes/menu/loophome'); ?>
+    <nav id="navbarfixed" class="navbar navbar-expand-lg sticky-top bg-dark navbar-dark">
+        <div class="container">
+
+            <!-- navbar-brand -->
+            <a class="navbar-brand fw-bold" href="#">PIPELINE DIGITAL</a>
+
+            <!-- btn toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPipeline">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- menu -->
+            <div class="collapse navbar-collapse" id="navbarPipeline">
+                <ul class="navbar-nav ms-auto text-center gap-2 gap-lg-3 w-100 justify-content-end align-items-center">
+                    <?php get_template_part('includes/navigation/loophome'); ?>
+                    
+                    <!-- cta -->
+                    <li class="nav-item w-100-mobile mt-3 mt-lg-0 mb-2 mb-lg-0">
+                        <a class="nav-link btn-nav-accent text-center mx-auto" href="#contato"
+                            data-analytics="nav-click-orcamento">
+                             <b><i class="fab fa-whatsapp"></i> Solicitar Orçamento</b>
+                        </a>
+                    </li>
+                </ul>
             </div>
+
         </div>
-    </div>
-</nav>
+    </nav>

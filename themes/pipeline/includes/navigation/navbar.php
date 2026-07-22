@@ -1,5 +1,5 @@
 <!-- NAVBAR --> 
-    <nav class="navbar navbar-expand-lg sticky-top bg-dark navbar-dark">
+    <nav id="navbar" class="navbar navbar-expand-lg bg-dark navbar-dark">
         <div class="container">
 
             <!-- navbar-brand -->
