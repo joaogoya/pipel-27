@@ -15,7 +15,7 @@ foreach ($main_menu as $item) :
             <a 
                 class="nav-link py-2 <?php if (is_front_page()) : echo 'smooth'; endif; ?>" 
                 title="Vá para a página <?php echo $item->title; ?>" 
-                href="<?php if (!is_front_page()) : echo  bloginfo('url'); endif; ?>/#<?php echo $slug; ?>"
+                href="<?php if (!is_front_page()) : echo  bloginfo('url'); endif; echo  bloginfo('url');?>/#<?php echo $slug; ?>"
             >
                     <?php echo $item->title; ?>
             </a>

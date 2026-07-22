@@ -3,7 +3,7 @@
         <div class="container">
 
             <!-- navbar-brand -->
-            <a class="navbar-brand fw-bold" href="#">PIPELINE DIGITAL</a>
+            <a class="navbar-brand fw-bold" href="<?php echo bloginfo('url'); ?>">PIPELINE DIGITAL</a>
 
             <!-- btn toggle -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPipeline">
@@ -17,9 +17,9 @@
                     
                     <!-- cta -->
                     <li class="nav-item w-100-mobile mt-3 mt-lg-0 mb-2 mb-lg-0">
-                        <a class="nav-link btn-nav-accent text-center mx-auto" href="#contato"
+                        <a class="nav-link btn-nav-accent text-center mx-auto" href="https://wa.me/5551<?php echo get_afc_by_page_slug('whatsapp', 'home_config', 'informacoes-de-contato'); ?>" target="_blank"
                             data-analytics="nav-click-orcamento">
-                             <b><i class="fab fa-whatsapp"></i> Solicitar Orçamento</b>
+                             <b> Solicitar Orçamento <i class="fas fa-arrow-right ms-2"></i></b>
                         </a>
                     </li>
                 </ul>

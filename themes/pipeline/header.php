@@ -26,7 +26,7 @@
     <?php wp_head(); ?>
 </head>
 
-<body>
+<body id="home">
 
 <header id="masthead" class="site-header">
     <?php get_template_part('includes/navigation/topbar'); ?>

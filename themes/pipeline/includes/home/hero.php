@@ -26,8 +26,8 @@
 
                 <!-- btn cta -->
                 <div class="hero-actions mt-5"> 
-                    <a href="#contato" class="btn-pipeline-main" data-analytics="hero-cta-principal">
-                       <i class="fab fa-whatsapp"></i> Quero vender no Google <i class="fas fa-arrow-right ms-2"></i>
+                    <a href="https://wa.me/5551<?php echo get_afc_by_page_slug('whatsapp', 'home_config', 'informacoes-de-contato'); ?>" target="_blank" class="btn-pipeline-main" data-analytics="hero-cta-principal">
+                       Quero vender no Google <i class="fas fa-arrow-right ms-2"></i>
                     </a>
                 </div>
 
