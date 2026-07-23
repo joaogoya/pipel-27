@@ -2,7 +2,7 @@
     <div class="container">
 
         <div class="title-elaborado-center mb-5">
-            <span class="subtitle-tag d-block text-center">Mais do que tecnologia, comunicação</span>
+            <span class="subtitle-tag d-block text-center">Mais do que tecnologia: um processo estruturado.</span>
             <h2 class="display-5 fw-bold text-center">
                 Nosso <span class="text-accent">Pipeline</span> para você <span class="text-accent">Vender Mais</span>
             </h2>
@@ -78,10 +78,10 @@
                         </p>
 
                         <div class="pipeline-footer">
-                            <a href="#" class="pipeline-btn">
+                            <!-- <a href="#" class="pipeline-btn">
                                 <span>Saiba Mais</span>
                                 <i class="fas fa-arrow-right ms-2"></i>
-                            </a>
+                            </a> -->
                             <span class="pipeline-number">
                                 <?php echo sprintf('%02d', ($servicos_query->post->menu_order + 1)) ; ?>
                             </span>
@@ -127,7 +127,7 @@
                             <span
                                 class="badge bg-accent-soft text-accent px-3 py-2 rounded-pill fw-bold mb-3 d-inline-flex align-items-center gap-2"
                                 style="font-size: 0.8rem;">
-                                <i class="fas fa-route"></i> CRESCIMENTO ESTRATÉGICO
+                                <i class="fa-solid fa-arrow-up-right-dots"></i> CRESCIMENTO PLANEJADO
                             </span>
                             <h3 class="display-6 fw-bold text-white mb-0">
                                 Etapas do nosso <span class="text-accent">Pipeline</span>
@@ -140,9 +140,9 @@
                             <!-- FASE 1 -->
                             <div class="phase-card p-3 rounded-4 bg-white-05 border border-white-10">
                                 <div class="d-flex align-items-center gap-2 mb-2">
-                                    <span class="phase-badge bg-accent text-primary fw-bold px-2 py-1 rounded">FASE
+                                    <span class="phase-badge bg-white-20 text-white fw-bold px-2 py-1 rounded">FASE
                                         1</span>
-                                    <strong class="text-white fs-6">Combater a Invisibilidade</strong>
+                                    <strong class="text-white fs-6">Combater a Invisibilidade e tracionar</strong>
                                 </div>
 
                                 <div class="row g-2">
@@ -154,8 +154,7 @@
                                             <div class="lh-sm">
                                                 <span class="d-block text-white fw-semibold fs-7">Perfil de
                                                     Empresas</span>
-                                                <small class="text-white-50" style="font-size: 0.75rem;">Vitrine para
-                                                    buscadores e IAs</small>
+                                                <small class="text-white-50" style="font-size: 0.75rem;">O básico para que buscadores e IAs encontrem você.</small>
                                             </div>
                                         </div>
                                     </div>
@@ -193,8 +192,7 @@
                                             <div class="lh-sm">
                                                 <span class="d-block text-white fw-semibold fs-7">Site
                                                     Institucional</span>
-                                                <small class="text-white-50" style="font-size: 0.75rem;">Sede própria e
-                                                    valorização</small>
+                                                <small class="text-white-50" style="font-size: 0.75rem;"> Profissionalismo e credibilidade.</small>
                                             </div>
                                         </div>
                                     </div>
@@ -207,8 +205,7 @@
                                             <div class="lh-sm">
                                                 <span class="d-block text-white fw-semibold fs-7">Exposição Orgânica
                                                     (SEO)</span>
-                                                <small class="text-white-50" style="font-size: 0.75rem;">Posicionamento
-                                                    para cobrar mais</small>
+                                                <small class="text-white-50" style="font-size: 0.75rem;">Posicionamento diferenciado para valorizar o seu trabalho</small>
                                             </div>
                                         </div>
                                     </div>
@@ -226,14 +223,15 @@
 
                             <div class="d-inline-flex align-items-center justify-content-center bg-accent-soft text-accent rounded-circle mb-3"
                                 style="width: 45px; height: 45px;">
-                                <i class="fas fa-chart-pie fs-5"></i>
+                                <!-- <i class="fa-solid fa-flag-checkered"></i> --><i class="fa-solid fa-award"></i>
                             </div>
 
-                            <h4 class="fs-5 fw-bold text-white mb-2">Em qual etapa seu negócio está travado?</h4>
+                            <h4 class="fs-5 fw-bold text-white mb-2">
+                                Em qual etapa estão seus desafios agora?
+                            </h4>
 
                             <p class="text-white-50 fs-6 lh-base mb-4" style="font-size: 0.9rem !important;">
-                                Fale com a gente para mapear sua presença atual e descobrir qual é o próximo passo para
-                                destravar suas vendas no Google.
+                                Fale com a gente para planejar suas ações e superar as etapas que faltam. Nosso trabalho é ajudar você a vender mais no Google.
                             </p>
 
                             <a href="https://wa.me/5551<?php echo get_afc_by_page_slug('whatsapp','home_config','informacoes-de-contato');?>"
@@ -244,7 +242,7 @@
                             </a>
 
                             <small class="d-block text-center opacity-50 mt-3" style="font-size: 0.75rem;">
-                                <i class="fas fa-shield-alt me-1"></i> Resposta rápida direto com especialista
+                                <i class="fas fa-shield-alt me-1"></i> PIPELINE DIGITAL
                             </small>
 
                         </div>
