@@ -1,0 +1,160 @@
+/* ==========================================
+   PIPELINE SECTION DESIGN (V2 - SANGRADO)
+   ========================================== */
+
+/* Subtítulo no topo */
+.badge-sub-section {
+  display: inline-block;
+  color: #ffaa17;
+  font-weight: 800;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* O Card do Pipeline */
+.pipeline-card {
+  position: relative;
+  background: #ffffff;
+  border-radius: 20px;
+  border: 1px solid rgba(4, 29, 56, 0.08);
+  box-shadow: 0 10px 30px rgba(4, 29, 56, 0.03);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.4s ease;
+  overflow: hidden; /* Garante que a imagem respeite a borda arredondada do topo */
+}
+
+.pipeline-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(4, 29, 56, 0.08);
+  border-color: rgba(255, 170, 23, 0.3);
+}
+
+/* Imagem Sangrada (Borda a Borda de 100% no topo) */
+.pipeline-img-wrapper {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.pipeline-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.pipeline-card:hover .pipeline-img-wrapper img {
+  transform: scale(1.06);
+}
+
+/* Badge sobreposta na Imagem */
+.pipeline-badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: #ffaa17;
+  color: #041d38;
+  font-size: 0.65rem;
+  font-weight: 800;
+  padding: 6px 14px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 2;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+}
+
+/* Corpo Interno do Card */
+.pipeline-content {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.pipeline-sub {
+  color: #ffaa17;
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.pipeline-title {
+  color: #041d38;
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.pipeline-text {
+  color: #6c757d;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+/* Rodapé do Card (Botão + Número da Etapa) */
+.pipeline-footer {
+  margin-top: auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 15px;
+}
+
+/* Botão Compacto Alinhado à Esquerda */
+.pipeline-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 22px;
+  background: #041d38;
+  color: #ffffff;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.pipeline-btn:hover {
+  background: #ffaa17;
+  color: #041d38;
+}
+
+.pipeline-btn i {
+  transition: transform 0.3s ease;
+}
+
+.pipeline-btn:hover i {
+  transform: translateX(4px);
+}
+
+/* Número da Etapa no Canto Inferior Direito */
+.pipeline-number {
+  font-size: 3.8rem;
+  font-weight: 900;
+  color: rgba(4, 29, 56, 0.08);
+  line-height: 0.8;
+  user-select: none;
+  pointer-events: none;
+  transition: color 0.4s ease;
+}
+
+.pipeline-card:hover .pipeline-number {
+  color: rgba(255, 170, 23, 0.25);
+}
+
+.pserv{
+  width: 100%;
+  max-width: 80%;
+  margin: auto;
+  text-align: center;
+}

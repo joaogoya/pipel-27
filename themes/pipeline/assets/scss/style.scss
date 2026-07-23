@@ -12,6 +12,7 @@
 @use "presentation" as *; // Apresentação
 @use "abaout" as *; // Sobre
 @use "services" as *; // Serviços
+@use "pipeline";
 @use "portfolio" as *; // Portfólio
 @use "depos" as *; // Depoimentos
 @use "contact" as *; // Contato
